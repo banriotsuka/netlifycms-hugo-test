@@ -16,6 +16,7 @@ export default class PostPreview extends React.Component {
         <p>{ entry.getIn(["data", "description"]) }</p>
         { image && <img src={ image } alt={ entry.getIn(["data", "title"])} /> }
         { widgetFor("body") }
+        { entry.getIn(["data", "testfields1"])}
       </div>
     </div>;
   }
